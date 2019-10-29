@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Cza-1l-bfb">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LocalizationTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oJG-Mz-PBJ">
+                                <rect key="frame" x="160.5" y="422.5" width="93" height="51"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="_hello_"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="APv-bh-WBq"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_label_" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w6N-mR-VxZ">
+                                <rect key="frame" x="181.5" y="493.5" width="51" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="storyboard_label"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u5I-TL-94C">
+                                <rect key="frame" x="161.5" y="534.5" width="91" height="30"/>
+                                <state key="normal" title="_test_button_"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="storyboard_button"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="21w-OP-Fiy" kind="show" id="WVv-bZ-beS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4G0-dp-XZH">
+                                <rect key="frame" x="167" y="584.5" width="80" height="30"/>
+                                <state key="normal" title="_third_view_"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="storyboard_third"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="Da8-cV-gBO" kind="show" id="0es-Qa-63L"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y31-cG-pkg">
+                                <rect key="frame" x="16" y="260" width="382" height="142.5"/>
+                                <string key="text">The "Hello" button is localized through built-in Storyboard methods. This embeds the control ID (oJG-Mz-PBJ) into the Storyboard's strings file. The other label/buttons use LocalizableStoryboard.swift to look up strings from the main Localizable.strings file at runtime based on User Defined Runtime Attributes.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Y31-cG-pkg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="5Xs-8V-9zr"/>
+                            <constraint firstItem="u5I-TL-94C" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7A0-XX-DpS"/>
+                            <constraint firstItem="4G0-dp-XZH" firstAttribute="top" secondItem="u5I-TL-94C" secondAttribute="bottom" constant="20" id="OZ2-SR-hW2"/>
+                            <constraint firstItem="oJG-Mz-PBJ" firstAttribute="top" secondItem="Y31-cG-pkg" secondAttribute="bottom" constant="20" id="RGb-Vh-9EK"/>
+                            <constraint firstItem="w6N-mR-VxZ" firstAttribute="top" secondItem="oJG-Mz-PBJ" secondAttribute="bottom" constant="20" id="WYk-Dy-aPs"/>
+                            <constraint firstItem="oJG-Mz-PBJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XjX-uE-ghF"/>
+                            <constraint firstItem="4G0-dp-XZH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YYR-mJ-OKJ"/>
+                            <constraint firstItem="w6N-mR-VxZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ecH-xD-pZS"/>
+                            <constraint firstItem="oJG-Mz-PBJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gXR-8G-wHR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Y31-cG-pkg" secondAttribute="trailing" constant="16" id="hVd-Ua-Nwi"/>
+                            <constraint firstItem="u5I-TL-94C" firstAttribute="top" secondItem="w6N-mR-VxZ" secondAttribute="bottom" constant="20" id="oc9-fe-t0m"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Main View" id="lfu-d9-Sgu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="870" y="-654"/>
+        </scene>
+        <!--Second View-->
+        <scene sceneID="ppb-Tb-hC2">
+            <objects>
+                <viewController title="Second View" id="21w-OP-Fiy" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3Da-bL-EOh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q1J-oa-aaS">
+                                <rect key="frame" x="16" y="397.5" width="382" height="101.5"/>
+                                <string key="text">This view controller was added to the storyboard after turning on localization, so none of its control IDs (or string values) are added to the Storyboard's string files when editing/adding controls.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Zn-HT-u7A">
+                                <rect key="frame" x="162.5" y="347.5" width="89" height="30"/>
+                                <state key="normal" title="Some Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Q1J-oa-aaS" firstAttribute="leading" secondItem="XTl-lc-Rrd" secondAttribute="leading" constant="16" id="Bis-gT-XWD"/>
+                            <constraint firstItem="9Zn-HT-u7A" firstAttribute="centerX" secondItem="3Da-bL-EOh" secondAttribute="centerX" id="ExD-v7-dsI"/>
+                            <constraint firstItem="Q1J-oa-aaS" firstAttribute="top" secondItem="9Zn-HT-u7A" secondAttribute="bottom" constant="20" id="XLG-vZ-ML8"/>
+                            <constraint firstAttribute="trailing" secondItem="Q1J-oa-aaS" secondAttribute="trailing" constant="16" id="puA-tK-Tvi"/>
+                            <constraint firstItem="Q1J-oa-aaS" firstAttribute="centerY" secondItem="3Da-bL-EOh" secondAttribute="centerY" id="xeK-pX-8kJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="XTl-lc-Rrd"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k4e-Af-YGg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1717" y="-1023"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="NtV-jm-xoT">
+            <objects>
+                <viewController id="Da8-cV-gBO" customClass="ThirdViewController" customModule="LocalizationTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rb6-cH-GKY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_placeholder_blurb_" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GYz-sw-hwD">
+                                <rect key="frame" x="16" y="438" width="382" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="storyboard_blurb"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GKV-fx-zKT" firstAttribute="trailing" secondItem="GYz-sw-hwD" secondAttribute="trailing" constant="16" id="6Lq-eT-PCX"/>
+                            <constraint firstItem="GYz-sw-hwD" firstAttribute="centerY" secondItem="rb6-cH-GKY" secondAttribute="centerY" id="L1F-1M-o92"/>
+                            <constraint firstItem="GYz-sw-hwD" firstAttribute="leading" secondItem="GKV-fx-zKT" secondAttribute="leading" constant="16" id="hvI-Ps-whb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="GKV-fx-zKT"/>
+                    </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="storyboard_third"/>
+                    </userDefinedRuntimeAttributes>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VFD-Ry-wQb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1716" y="-323"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="C5z-rb-mFl">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Cza-1l-bfb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GfZ-vU-nYk">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="8hS-Hf-rpv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GLe-qH-cAr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="76.811594202898561" y="-653.57142857142856"/>
+        </scene>
+    </scenes>
+</document>

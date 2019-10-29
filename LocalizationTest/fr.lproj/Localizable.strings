@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  LocalizationTest
+*/
+
+"alert_title"       = "Erreur";
+"alert_message"     = "Un message va ici";
+"alert_button"      = "D'accord";
+
+"storyboard_label"  = "Au revoir";
+"storyboard_button" = "Bouton de test";
+"storyboard_third"  = "Troisième vue";
+"storyboard_blurb"  = "Cette vue est entièrement localisée à l'aide de LocalizableStoryboard.swift. Il sacrifie les chaînes visibles dans l'éditeur de Storyboard pour un meilleur contrôle des clés de localisation.";

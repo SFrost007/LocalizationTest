@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  LocalizationTest
+*/
+
+"alert_title"       = "Error";
+"alert_message"     = "Some message goes here";
+"alert_button"      = "OK";
+
+"storyboard_label"  = "Goodbye";
+"storyboard_button" = "Test button";
+"storyboard_third"  = "Third View";
+"storyboard_blurb"  = "This view is localized completely using LocalizableStoryboard.swift. It sacrifices strings viewable in the Storyboard editor for nicer controls of the localization keys.";

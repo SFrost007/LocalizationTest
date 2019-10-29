@@ -1,0 +1,7 @@
+/* 
+  InfoPlist.strings
+  LocalizationTest
+*/
+
+// Taking liberties with French truncation here
+CFBundleDisplayName = "Bonj le monde";

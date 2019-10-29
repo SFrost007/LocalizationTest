@@ -1,0 +1,6 @@
+/* 
+  InfoPlist.strings
+  LocalizationTest
+*/
+
+CFBundleDisplayName = "Hallo Welt";
